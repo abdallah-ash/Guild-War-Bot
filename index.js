@@ -3,8 +3,7 @@ dotenv.config()
 
 import { Client, GatewayIntentBits } from 'discord.js'
 import cron from 'node-cron'
-
-require('./keep_alive.js')
+import './keep_alive.js'
 
 const client = new Client({
     intents: [GatewayIntentBits.Guilds],
